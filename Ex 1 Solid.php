@@ -1,29 +1,29 @@
 <?php
-class Venda extends nota implements bdPedido
+class Venda extends nota implements Pedido
 {
     public function calcularSomaTotal(){/*Função para o calculo da soma total*/}
 }
-interface bdPedido
+interface Pedido
 {
     public function carrega();
     public function salva();
     public function atualiza();
     public function exclui();
 }
-abstract class nota extends Produto
+abstract class notas extends Produto
 {
     public function imprimePedido(){/*Função para imprimir o pedido*/}
-    public function mostraHTMLPedido(){/*...*/}
+    public function mostraHTMLPedido(){/**/}
 }
-abstract class Produto extends Produto
+abstract class Produtos extends Produto
 {
-    public function retornaItens(){/*...*/}
-    public function retornaQuantidade(){/*...*/}
+    public function retornaItens(){/**/}
+    public function retornaQuantidade(){/**/}
     
 }
-abstract class Produto
+abstract class Produtos
 {
-    public function adicionaItem($item){/*...*/}
-    public function excluirItem($item){/*...*/}
+    public function adicionaItem($item){/**/}
+    public function excluirItem($item){/**/}
 }
 ?>
