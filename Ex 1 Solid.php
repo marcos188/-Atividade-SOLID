@@ -10,12 +10,12 @@ interface Pedido
     public function atualiza();
     public function exclui();
 }
-abstract class notas extends Produto
+abstract class notas extends Produtos
 {
     public function imprimePedido(){/*Função para imprimir o pedido*/}
     public function mostraHTMLPedido(){/**/}
 }
-abstract class Produtos extends Produto
+abstract class Produtos extends Produtos
 {
     public function retornaItens(){/**/}
     public function retornaQuantidade(){/**/}
